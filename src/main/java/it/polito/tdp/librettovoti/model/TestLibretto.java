@@ -1,6 +1,7 @@
 package it.polito.tdp.librettovoti.model;
 
 import java.time.LocalDate;
+import java.util.*;
 
 public class TestLibretto {
 	
@@ -16,6 +17,9 @@ public class TestLibretto {
 		libretto.add(new Voto("Informatica", 29, LocalDate.of(2019,  7,  13)));
 		
 		System.out.println(libretto);
+		
+		List<Voto> venticinque = libretto.listaVotiUguali(25);
+		Libretto librettoVenticinque = libretto.votiUguali(25);
+		
 	}
-
 }
